@@ -51,7 +51,7 @@ const { REST } = require("@discordjs/rest");
 const {
     Routes,
 } = require('discord-api-types/v10');
-= async function InstallGlobalCommands(appId, commands) {
+async function InstallGlobalCommands(appId, commands) {
     const rest = new REST().setToken(config.token);
     const data = await rest.put(
         Routes.applicationCommands(appId),
