@@ -15,7 +15,6 @@ function VerifyDiscordRequest(clientKey = config.publicKEY) {
         const isValidRequest = verifyKey(buf, signature, timestamp, clientKey);
         if (!isValidRequest) {
             res.status(401).send('Bad request signature');
-throw new Error(JSON.stringify(config))
             
             throw new Error('Bad request signature');
         }
