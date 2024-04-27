@@ -1,7 +1,6 @@
 
 
 const config = require("./config")
-module.exports.config = config
 const { verifyKey, InteractionType, InteractionResponseType, InteractionResponseFlags } = require("discord-interactions");
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 //FUNCTİONS
@@ -52,7 +51,7 @@ const { REST } = require("@discordjs/rest");
 const {
     Routes,
 } = require('discord-api-types/v10');
-module.exports.installcmds = async function InstallGlobalCommands(appId, commands) {
+= async function InstallGlobalCommands(appId, commands) {
     const rest = new REST().setToken(config.token);
     const data = await rest.put(
         Routes.applicationCommands(appId),
