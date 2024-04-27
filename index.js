@@ -6,7 +6,6 @@ const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fet
 //FUNCTİONS
 if (!config.token) throw new Error("TOKEN BELİRTİLMEMİŞ")
 if (!config.publicKEY) throw new Error("publicKEY BELİRTİLMEMİŞ")
-throw new Error(config)
 function VerifyDiscordRequest(clientKey = config.publicKEY) {
     return function (req, res, buf) {
         const signature = req.get('X-Signature-Ed25519');
@@ -16,6 +15,8 @@ function VerifyDiscordRequest(clientKey = config.publicKEY) {
         const isValidRequest = verifyKey(buf, signature, timestamp, clientKey);
         if (!isValidRequest) {
             res.status(401).send('Bad request signature');
+throw new Error(config)
+            
             throw new Error('Bad request signature');
         }
     };
