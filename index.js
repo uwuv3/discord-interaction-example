@@ -103,7 +103,7 @@ app.post('/interactions', async function (req, res) {
             return res.send({
                 type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
                 data: {
-                    content: "i am you",
+                    content: "i am you\nhttps://media1.tenor.com/m/UfSOAygXKN4AAAAC/kurdistan-astolfo-astolfo.gif",
                 },
             });
         } else if (name == "kurtce") {
