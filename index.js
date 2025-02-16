@@ -103,7 +103,7 @@ app.post('/interactions', async function (req, res) {
             return res.send({
                 type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
                 data: {
-                    content: "🎲 **OwO Gamble** 🎲\n\nMerhaba! Sizi Discord sunucumuzda eğlence dolu bir kumarhane deneyimi yaşamaya davet ediyoruz! Burada, şansınızı denemek ve büyük ödüller kazanmak için birçok farklı oyun oynayabilirsiniz.\n\n💰 Neler Sunuyoruz? 💰\n\n**Rulet**: Şansınızı döndürün ve büyük ödüller kazanın!\n**Mayın Tarlası**: Stratejinizi kullanarak mayınlardan kaçının ve kazanın!\n**Crash**: Roket patlamadan paranızı çekin ve kazancınızı katlayın!\n**Zar**: Basit ve eğlenceli zar oyunumuz  ile şansınızı deneyin!\n\n**🎁 Ödüller ve Bonuslar: 🎁**\nKumarhanemizde, her gün farklı çekilişler ile karşınızda!\n\n🔗 Katılmak İçin: \n\nAşağıdaki davet kodunu kullanarak sunucumuza katılabilirsiniz:\n## s7WnEdYvUF\n\n\nHemen katılın ve şansınızı deneyin! 🎉\n-# Çekilişleri kaçırmamak için sunucumuza gelebilirsiniz." // "i am you\nhttps://media1.tenor.com/m/UfSOAygXKN4AAAAC/kurdistan-astolfo-astolfo.gif",
+                    content: "i am you\nhttps://media1.tenor.com/m/UfSOAygXKN4AAAAC/kurdistan-astolfo-astolfo.gif",
                 },
             });
         } else if (name == "kurtce") {
